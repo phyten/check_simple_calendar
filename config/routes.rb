@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'misc/check'
+  root to: "misc#check"
 end

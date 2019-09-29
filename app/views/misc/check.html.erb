@@ -1,0 +1,10 @@
+<table class="time-table">
+  <% 0.upto(23).each do |i| %>
+    <% 0.step(59, 30) do |k| %>
+      <tr>
+        <th><%= (DateTime.now.beginning_of_day + i.hours + k.minutes).strftime("%H:%M") %></th>
+        <td>予定</td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>
